@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <title>Non Covid-Patient Lungs X-Ray Detection</title>
+ 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+ 
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div>
+        <img src="static\images\lung10.jpg" class="w3-border w3-padding" alt="Kalam Sardar AI PVT LTD"
+            style="width:100%">
+    </div>
+ 
+    <div class="container my-2">
+        <div class="row mb-5">
+ 
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                     
+                </span>
+            </div>
+ 
+            <div class="col-sm">
+ 
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+ 
+                    <h5>
+ 
+                      This Model Predicts that The Patient doesn't affect in Covid-19, Therefore, the patient must need to test COVID-19 for clarifying that he/she would Covid positive or negative. Don't to be panic, Please Consult the Doctor. All the World is passed through COVID-19 Pandemic, So we would overcome this pandemic. For this we should wear masks, keep a social distance and increase immunity.</br></br>
+                       এই মডেলটি ভবিষ্যদ্বাণী করে যে রোগী কোভিড -১৯ এ প্রভাবিত করে না, সুতরাং, রোগীকে অবশ্যই কোভিড -১৯ পরীক্ষা করতে হবে যে সে / সে কোভিডকে ইতিবাচক বা নেতিবাচক করবে। আতঙ্কিত হবেন না, দয়া করে ডাক্তারের সাথে পরামর্শ করুন। সমস্ত বিশ্ব COVID-19 মহামারীর মধ্যে দিয়ে গেছে, সুতরাং আমরা এই মহামারীটি কাটিয়ে উঠব। এর জন্য আমাদের মুখোশ পরিধান করা উচিত, একটি সামাজিক দূরত্ব রাখা উচিত এবং অনাক্রম্যতা বাড়ানো উচিত।</br></br>
+                       यह मॉडल भविष्यवाणी करता है कि रोगी कोविड -19 को प्रभावित नहीं करता है, इसलिए, रोगी को यह स्पष्ट करने के लिए COVID-19 का परीक्षण करने की आवश्यकता है कि वह सकारात्मक या नकारात्मक कोविड होगा। घबराएं नहीं, डॉक्टर से सलाह लें। पूरी दुनिया COVID-19 महामारी से गुजरी है, इसलिए हम इस महामारी पर विजय प्राप्त करेंगे। इसके लिए हमें मास्क पहनना चाहिए, सामाजिक दूरी बनाकर रखनी चाहिए और रोग प्रतिरोधक क्षमता को बढ़ाना चाहिए।</br></br>
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+</body>
+ 
+</html>
