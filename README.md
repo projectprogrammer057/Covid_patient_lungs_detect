@@ -1,0 +1,1 @@
+# Covid_patient_lungs_detect
